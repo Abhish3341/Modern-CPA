@@ -33,14 +33,7 @@ const Footer: React.FC = () => {
               >
                 <Facebook className="h-5 w-5" />
               </motion.a>
-              <motion.a 
-                href="#" 
-                className="text-white hover:text-amber-400 transition-colors"
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <Twitter className="h-5 w-5" />
-              </motion.a>
+              
               <motion.a 
                 href="#" 
                 className="text-white hover:text-amber-400 transition-colors"

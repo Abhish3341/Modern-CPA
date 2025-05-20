@@ -43,31 +43,43 @@ const Hero: React.FC = () => {
               </motion.button>
             </motion.div>
             <motion.div 
-              className="mt-12 flex items-center"
+              className="mt-12"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.6 }}
             >
-              <p className="text-sm text-gray-500 mr-4">Trusted by:</p>
-              <div className="flex space-x-6">
-                <motion.img 
-                  src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=100" 
-                  alt="Client Logo 1"
-                  className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-                  whileHover={{ scale: 1.1 }}
-                />
-                <motion.img 
-                  src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=100" 
-                  alt="Client Logo 2"
-                  className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-                  whileHover={{ scale: 1.1 }}
-                />
-                <motion.img 
-                  src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=100" 
-                  alt="Client Logo 3"
-                  className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-                  whileHover={{ scale: 1.1 }}
-                />
+              <p className="text-sm text-gray-500 mb-4">Trusted by leading companies:</p>
+              <div className="grid grid-cols-3 gap-6">
+                <motion.div 
+                  className="bg-white p-4 rounded-lg shadow-md flex items-center justify-center"
+                  whileHover={{ scale: 1.05, boxShadow: '0 8px 30px rgba(0,0,0,0.12)' }}
+                >
+                  <img 
+                    src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
+                    alt="Google"
+                    className="h-8 object-contain"
+                  />
+                </motion.div>
+                <motion.div 
+                  className="bg-white p-4 rounded-lg shadow-md flex items-center justify-center"
+                  whileHover={{ scale: 1.05, boxShadow: '0 8px 30px rgba(0,0,0,0.12)' }}
+                >
+                  <img 
+                    src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+                    alt="Microsoft"
+                    className="h-8 object-contain"
+                  />
+                </motion.div>
+                <motion.div 
+                  className="bg-white p-4 rounded-lg shadow-md flex items-center justify-center"
+                  whileHover={{ scale: 1.05, boxShadow: '0 8px 30px rgba(0,0,0,0.12)' }}
+                >
+                  <img 
+                    src="https://cdn.icon-icons.com/icons2/2699/PNG/512/netflix_logo_icon_170919.png"
+                    alt="Netflix"
+                    className="h-8 object-contain"
+                  />
+                </motion.div>
               </div>
             </motion.div>
           </motion.div>
