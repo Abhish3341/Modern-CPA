@@ -91,8 +91,9 @@ const Hero: React.FC = () => {
                   whileHover={{ scale: 1.05, boxShadow: '0 8px 30px rgba(0,0,0,0.12)' }}
                 >
                   <img 
-                    src="https://cdn.icon-icons.com/icons2/2699/PNG/512/netflix_logo_icon_170919.png"
-                    alt="Netflix"
+                    src="https://upload.wikimedia.org/wikipedia/commons/4/46/Hewlett_Packard_Enterprise_logo.svg"
+                    whileHover={{ scale: 1.05, boxShadow: '0 8px 30px rgba(0,0,0,0.12)' }}
+                    alt="Hewlett Packard Enterprise"
                     className="h-8 object-contain"
                   />
                 </motion.div>
