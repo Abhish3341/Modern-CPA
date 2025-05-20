@@ -3,6 +3,20 @@ import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
+  const handleGetStarted = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleLearnMore = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="relative pt-20 pb-20 md:pt-32 md:pb-40 bg-gradient-to-br from-indigo-50 to-white">
       <div className="container mx-auto px-4 md:px-6">
@@ -30,6 +44,7 @@ const Hero: React.FC = () => {
                 className="bg-indigo-900 hover:bg-indigo-800 text-white px-6 py-3 rounded-md transition-all duration-300 shadow-sm hover:shadow-md flex items-center justify-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={handleGetStarted}
               >
                 <span>Get Started</span>
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -38,6 +53,7 @@ const Hero: React.FC = () => {
                 className="border border-indigo-900 text-indigo-900 hover:bg-indigo-50 px-6 py-3 rounded-md transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={handleLearnMore}
               >
                 Learn More
               </motion.button>
@@ -121,7 +137,7 @@ const Hero: React.FC = () => {
               >
                 <img 
                   src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                  alt="Professional accountants" 
+                  alt="Professional accountant" 
                   className="w-full h-auto"
                 />
               </motion.div>

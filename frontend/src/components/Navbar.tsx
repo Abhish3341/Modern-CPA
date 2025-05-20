@@ -19,6 +19,13 @@ const Navbar: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleConsultation = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const navItems = ['Services', 'About', 'Team', 'Contact'];
 
   return (
@@ -64,6 +71,7 @@ const Navbar: React.FC = () => {
           className="hidden md:block bg-indigo-900 hover:bg-indigo-800 text-white px-5 py-2 rounded-md transition-all duration-200 shadow-sm hover:shadow-md"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onClick={handleConsultation}
         >
           Schedule a Consultation
         </motion.button>
@@ -103,6 +111,7 @@ const Navbar: React.FC = () => {
                 className="w-full bg-indigo-900 text-white px-5 py-2 rounded-md shadow-sm hover:bg-indigo-800"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
+                onClick={handleConsultation}
               >
                 Schedule a Consultation
               </motion.button>

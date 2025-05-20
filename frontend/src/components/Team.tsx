@@ -37,7 +37,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({ image, name, role, bio }) => (
 const Team: React.FC = () => {
   const teamMembers = [
     {
-      image: "https://images.pexels.com/photos/5668859/pexels-photo-5668859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       name: "Sarah Johnson, CPA",
       role: "Founding Partner",
       bio: "With over 20 years of experience in tax strategy and business advisory, Sarah leads our firm with expertise and vision."
@@ -49,8 +49,8 @@ const Team: React.FC = () => {
       bio: "Michael specializes in complex tax planning for high-net-worth individuals and growing businesses across multiple industries."
     },
     {
-      image: "https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      name: "Emily Rodriguez, MBA",
+      image: "https://images.pexels.com/photos/7654096/pexels-photo-7654096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      name: "Ken Xu, MBA",
       role: "Advisory Services",
       bio: "Emily brings a wealth of knowledge in business strategy and financial analysis to help clients achieve their growth objectives."
     }
