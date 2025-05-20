@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Briefcase, Facebook, Linkedin, Instagram } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Footer: React.FC = () => {
