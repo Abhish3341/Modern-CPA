@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
                   <img 
                     src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
                     alt="Google"
-                    className="h-8 object-contain"
+                    className="h-12 object-contain" // Increased from h-8 to h-12
                   />
                 </motion.div>
                 <motion.div 
@@ -83,7 +83,7 @@ const Hero: React.FC = () => {
                   <img 
                     src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
                     alt="Microsoft"
-                    className="h-8 object-contain"
+                    className="h-12 object-contain" // Increased from h-8 to h-12
                   />
                 </motion.div>
                 <motion.div 
@@ -92,9 +92,8 @@ const Hero: React.FC = () => {
                 >
                   <img 
                     src="https://upload.wikimedia.org/wikipedia/commons/4/46/Hewlett_Packard_Enterprise_logo.svg"
-                    whileHover={{ scale: 1.05, boxShadow: '0 8px 30px rgba(0,0,0,0.12)' }}
                     alt="Hewlett Packard Enterprise"
-                    className="h-8 object-contain"
+                    className="h-12 object-contain" // Increased from h-8 to h-12
                   />
                 </motion.div>
               </div>
